@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Complete HTML basics demo page with styling">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srinivas</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      line-height: 1.6;
+    }
+
+header {
+  background-color: #839705;
+  color: white;
+  padding: 16px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;  
+  top: 0;
+  z-index: 1000;  
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+    nav a {
+      color: black;
+      margin-right: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      background-color:azure;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+     color: white;
+     background-color: rgb(192, 63, 63);
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      background: white;
+      padding: 16px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      font-size: 20px;
+      color: #111827;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 4px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e5e7eb;
+    }
+
+    input {
+      padding: 6px;
+      margin-top: 4px;
+      width: 250px;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1d4ed8;
+    }
+
+    footer {
+      background-color: #839705;
+      color: white;
+      text-align: center;
+      padding: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>SRINIVAS YADAV</h2>
+    <nav>
+      <a href="#About">About</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Images">Links</a>
+   </nav>
+  </header>
+
+  <main>
+
+    <!-- 3️⃣ TEXT -->
+    <section id="text">
+      <h1>3. Text & Content Tags</h1>
+      <p>
+        This is a <strong>paragraph</strong> with <em>emphasis</em> and 
+        <span>inline span text</span>.
+      </p>
+      <p>Line one<br>Line two</p>
+    </section>
+
+    <!-- 4️⃣ LISTS -->
+    <section id="lists">
+      <h1>4. Lists</h1>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- 5️⃣ LINKS -->
+    <section id="links">
+      <h1>5. Links & Navigation</h1>
+      <a href="https://www.google.com" target="_blank">Visit Google</a>
+    </section>
+
+    <!-- 6️⃣ IMAGES -->
+    <section>
+      <h1>6. Images & Media</h1>
+      <img src="https://via.placeholder.com/150" alt="Sample image">
+    </section>
+
+    <!-- 7️⃣ TABLES -->
+    <section id="tables">
+      <h1>7. Tables</h1>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+        </tr>
+        <tr>
+          <td>Srinivas</td>
+          <td>Frontend Developer</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 8️⃣ FORMS -->
+    <section id="forms">
+      <h1>8. Forms</h1>
+      <form>
+        <label for="email">Email</label><br>
+        <input id="email" type="email" placeholder="Enter email" required>
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- 9️⃣ SEMANTIC -->
+    <section>
+      <h1>9. Semantic HTML</h1>
+      <article>
+          <h2>Article Title</h2>
+        <p>This article uses semantic HTML structure.</p>
+      </article>
+    </section>
+
+    <!-- 🔟 BLOCK vs INLINE -->
+    <section>
+      <h1>10. Block vs Inline</h1>
+      <p>This is block</p>
+      <span>This is inline</span>
+      <span>Next inline</span>
+    </section>
+
+    <!-- 1️⃣1️⃣ DIV & SPAN -->
+    <section>
+      <h1>11. Div & Span</h1>
+      <div>
+        <h3>User Card</h3>
+        <span>Status: Active</span>
+      </div>
+    </section>
+
+    <!-- 1️⃣2️⃣ ATTRIBUTES -->
+    <section>
+      <h1>12. HTML Attributes</h1>
+      <p id="info" class="text" title="Information text">
+        Attributes example paragraph.
+      </p>
+    </section>
+
+    <!-- 1️⃣3️⃣ ACCESSIBILITY -->
+    <section>
+      <h1>13. Accessibility</h1>
+      <label for="name">Name</label><br>
+      <input id="name" type="text">
+    </section>
+
+    <!-- 1️⃣4️⃣ SEO -->
+    <section>
+      <h1>14. SEO Basics</h1>
+      <p>Proper headings and semantic tags help SEO.</p>
+    </section>
+
+    <!-- 1️⃣5️⃣ BEST PRACTICES -->
+    <section>
+      <h1>15. HTML Best Practices</h1>
+      <p>Clean code, semantic structure, accessibility.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 HTML Learning Demo
+  </footer>
+
+</body>
+</html>

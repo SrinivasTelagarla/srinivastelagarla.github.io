@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Srinivas Yadav, Frontend Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Roboto,Arial,sans-serif}
+    body{background:#f5f2ee;color:#2c2c2c}
+    header{background:#839705;color:#fff;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;position:sticky;top:0;z-index:10;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+    header h1{font-size:1.4rem;letter-spacing:1px} header h1 a{color:#fff;text-decoration:none}
+    nav{display:flex;gap:1.4rem;flex-wrap:wrap} nav a{color:#fff;text-decoration:none;font-weight:600;padding:4px 10px;border-radius:30px;transition:.25s}
+    nav a:hover,nav a.active{background:#fff;color:#2c3a00}
+    .intro{text-align:center;padding:60px 5% 30px} .intro h2{font-size:2.4rem;color:#839705;margin-bottom:10px}
+    .intro p{max-width:700px;margin:auto;line-height:1.6;color:#4a4a4a}
+    .grid{max-width:1200px;margin:0 auto;padding:20px 5% 70px;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px}
+    .card{background:#fff;border-radius:24px;padding:28px;box-shadow:0 12px 28px rgba(0,0,0,.08);display:flex;flex-direction:column;transition:.3s}
+    .card:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(0,0,0,.12)}
+    .card-top{display:flex;gap:18px;align-items:center;margin-bottom:16px}
+    .card-top img{width:72px;height:72px;object-fit:contain;flex-shrink:0}
+    .card h2{font-size:1.35rem;color:#2d3a1f;margin-top:6px} .sub{color:#5b6e23;font-size:.9rem;font-weight:500}
+    .card p{line-height:1.55;font-size:.95rem;color:#3a3a3a}
+    .card h4{margin:16px 0 6px;color:#3c4d0b;font-size:.95rem}
+    .card ul{padding-left:18px;line-height:1.6;font-size:.92rem;color:#3a3a3a}
+    .badge{display:inline-block;font-size:.7rem;font-weight:700;padding:3px 10px;border-radius:20px;background:#eef3da;color:#4d6100;letter-spacing:.5px}
+    .badge.live{background:#e6f4ea;color:#1e7b34}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0} .tags span{background:#eef3da;color:#4d6100;padding:4px 14px;border-radius:30px;font-size:.8rem;font-weight:600}
+    .btn{margin-top:auto;align-self:flex-start;background:#839705;color:#fff;padding:9px 22px;border-radius:40px;text-decoration:none;font-weight:600;font-size:.88rem;transition:.2s}
+    .btn:hover{background:#6a7c04}
+    .note{margin-top:auto;font-size:.85rem;color:#7e7e7e;font-style:italic}
+    footer{background:#839705;color:#fff;text-align:center;padding:24px 5%;font-size:.9rem}
+    footer a{color:#fff;font-weight:600}
+    @media(max-width:768px){header{flex-direction:column} .intro h2{font-size:2rem} .grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Srinivas Yadav</a></h1>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="index.html#resume">Experience</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="intro">
+    <h2>Projects</h2>
+    <p>Production apps I've built at Mindcoin Services for railway operations and research teams: React.js web dashboards, plus a tablet app built with Qt Quick and PySide6.</p>
+  </section>
+  <main class="grid">
+    <article class="card">
+      <div class="card-top"><img src="images/gatiyantra.png" alt="Gatiyantra"><div><span class="badge"><i class="fas fa-globe"></i> Web</span><h2>Gatiyantra</h2><p class="sub">Locomotive performance analytics</p></div></div>
+      <p>Analyses post-run locomotive data to score crew and train performance. Tracks over-speed, braking quality and section-wise adherence, with an actionable report for every trip.</p>
+      <h4>What I did</h4>
+      <ul><li>Built and maintain the React.js frontend</li><li>Trip reports and performance dashboards with ECharts and Ant Design tables</li><li>REST API integration for large run datasets</li></ul>
+      <div class="tags"><span>React.js</span><span>ECharts</span><span>REST APIs</span></div>
+      <a href="https://gatiyantra.com/" class="btn" target="_blank" rel="noopener noreferrer">Visit Live Site <i class="fas fa-arrow-up-right-from-square"></i></a>
+    </article>
+    <article class="card">
+      <div class="card-top"><img src="images/fogpass-web.png" alt="FogPASS Web"><div><span class="badge"><i class="fas fa-globe"></i> Web</span><h2>FogPASS Web</h2><p class="sub">Live trip analysis for railway fog safety</p></div></div>
+      <p>Live trip analysis for FogPASS, the GPS-based fog-safety system that alerts loco pilots to upcoming signals and landmarks in low visibility. The web app follows every running train in real time and analyses each trip.</p>
+      <h4>What I did</h4>
+      <ul><li>Built live trip tracking views in React.js that update in real time</li><li>Trip analysis dashboards with ECharts: speed, location and alerts along the route</li><li>Connected the UI to backend REST APIs</li></ul>
+      <div class="tags"><span>React.js</span><span>ECharts</span><span>Live Trip Analysis</span></div>
+      <span class="note"><i class="fas fa-lock"></i> Internal app &middot; demo on request</span>
+    </article>
+    <article class="card">
+      <div class="card-top"><img src="images/fogpass-tablet.png" alt="FogPASS Tablet App"><div><span class="badge"><i class="fas fa-tablet-screen-button"></i> Tablet</span><h2>FogPASS Tablet App</h2><p class="sub">Touch app for the FogPASS system</p></div></div>
+      <p>Tablet software for FogPASS with a touch-first interface. The UI is built in Qt Quick (QML) and driven by Python logic through PySide6.</p>
+      <h4>What I did</h4>
+      <ul><li>Designed and built the Qt Quick (QML) screens</li><li>Connected QML UI to Python backend with PySide6</li><li>Gained hands-on Python experience on a production app</li></ul>
+      <div class="tags"><span>Qt Quick / QML</span><span>PySide6</span><span>Python</span></div>
+      <span class="note"><i class="fas fa-lock"></i> Internal app &middot; demo on request</span>
+    </article>
+    <article class="card">
+      <div class="card-top"><img src="images/paceeye.png" alt="Pace Eye"><div><span class="badge"><i class="fas fa-globe"></i> Web</span><h2>Pace Eye</h2><p class="sub">Real-time operations monitoring</p></div></div>
+      <p>Real-time monitoring system that tracks operational metrics and KPIs, with analytics views and downloadable reports.</p>
+      <h4>What I did</h4>
+      <ul><li>Live KPI dashboards with charts and tables</li><li>Filters and drill-down views for analysis</li><li>Report export for operations teams</li></ul>
+      <div class="tags"><span>React.js</span><span>Ant Design</span><span>Real-time data</span></div>
+      <span class="note"><i class="fas fa-lock"></i> Internal app &middot; demo on request</span>
+    </article>
+    <article class="card">
+      <div class="card-top"><img src="images/sfr.png" alt="SFR Analysis"><div><span class="badge"><i class="fas fa-globe"></i> Web</span><h2>SFR Analysis</h2><p class="sub">Railway signal-failure reporting</p></div></div>
+      <p>App for reporting, tracking and analysing railway signal failures, with live dashboards, geotagging and exportable reports.</p>
+      <h4>What I did</h4>
+      <ul><li>Failure logging and tracking workflows</li><li>Dashboards with geotagged failure data</li><li>Exportable reports</li></ul>
+      <div class="tags"><span>React.js</span><span>Dashboards</span><span>Geotagging</span></div>
+      <span class="note"><i class="fas fa-lock"></i> Internal app &middot; demo on request</span>
+    </article>
+    <article class="card">
+      <div class="card-top"><img src="images/fdicon.png" alt="Field Diary"><div><span class="badge"><i class="fas fa-globe"></i> Web</span><h2>Field Diary</h2><p class="sub">Fieldwork log for scientists</p></div></div>
+      <p>Web app for scientists to record observations, track experiments and monitor fieldwork progress.</p>
+      <h4>What I did</h4>
+      <ul><li>Forms and CRUD screens for observations</li><li>Progress tracking views</li><li>Responsive UI for use in the field</li></ul>
+      <div class="tags"><span>React.js</span><span>Forms</span><span>CRUD</span></div>
+      <span class="note"><i class="fas fa-lock"></i> Internal app &middot; demo on request</span>
+    </article>
+  </main>
+  <footer>Want a walkthrough of any project? <a href="index.html#contact">Get in touch</a> &middot; <a href="resume.pdf" target="_blank">Download Resume</a></footer>
+</body>
+</html>
